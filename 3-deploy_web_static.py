@@ -4,7 +4,7 @@ Fabric script that creates and distributes an archive
 to your web servers, using the function deploy
 execute: fab -f 3-deploy_web_static.py deploy -i my_ssh_private_key -u ubuntu
 '''
-from fabric.api import env, local, run, put
+from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
 env.hosts = ['34.237.91.167', '100.25.137.209']
